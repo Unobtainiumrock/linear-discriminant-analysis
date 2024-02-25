@@ -31,7 +31,7 @@ where:
 - $\mathbb{P}(C_{k} | x)$ is the posterior probability of class $C_{k}$ given observation $x$.
 - $\mathbb{P}(x | C_{k})$ is hte likelihood of observing $x$ given that it belongs to class $C_{k}$.
 - $\mathbb{P}(C_{k})$ is the prior probability of class $C_{k}$, representing our initial belief about the distribution of classes before observing $x$.
-- $$\mathbb{P}(x)$$ is the evidence, a normalization factor ensuring that the probabilities across all classes sum to $$1$$. It's calculated as $$\sum_{j = 1}^{K}\mathbb{P}(x | C_{j}) \mathbb{P}(C_{j})$$, though for classification purposes, this term can often be ignored since it does not affect the ranking of the posterior probabilities.
+- $\mathbb{P}(x)$ is the evidence, a normalization factor ensuring that the probabilities across all classes sum to $1$. It's calculated as $$\sum_{j = 1}^{K}\mathbb{P}(x | C_{j}) \mathbb{P}(C_{j})$$, though for classification purposes, this term can often be ignored since it does not affect the ranking of the posterior probabilities.
 
 
 In LDA, the likelihoods $\mathbb{P}(x | C_{k})$ are typically assumed to be normally distributed with a mean specific to the class and a covariance matrix that is common across all classes. This simplification allows for the discriminant functions to be linear with respect to $x$.
